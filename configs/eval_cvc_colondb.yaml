@@ -1,0 +1,10 @@
+defaults:
+  - default.yaml
+  - datasets.yaml
+
+dataset:
+  key: cvc_colondb
+  max_samples: null
+
+paths:
+  output_dir: outputs/cvc_colondb

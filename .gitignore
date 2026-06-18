@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+outputs/
+logs/
+checkpoints/
+weights/
+data/
+datasets/
+pretrained_model/
+test_polyp/
+local/
+
+*.pth
+*.pt
+*.ckpt
+
+# External/vendored research code should be installed separately for public use.
+dinov2/
+sam2/
+segment_anything/
+
+# Local experiment artifacts.
+*.png
+*.jpg
+*.jpeg
+*.npy
+*.npz
+*.csv
+*.ipynb
+.ipynb_checkpoints/
+.vscode/

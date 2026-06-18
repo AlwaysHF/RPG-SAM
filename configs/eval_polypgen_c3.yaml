@@ -1,0 +1,10 @@
+defaults:
+  - default.yaml
+  - datasets.yaml
+
+dataset:
+  key: polypgen_c3
+  max_samples: null
+
+paths:
+  output_dir: outputs/polypgen_c3

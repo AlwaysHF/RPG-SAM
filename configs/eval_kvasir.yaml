@@ -1,0 +1,10 @@
+defaults:
+  - default.yaml
+  - datasets.yaml
+
+dataset:
+  key: kvasir
+  max_samples: null
+
+paths:
+  output_dir: outputs/kvasir

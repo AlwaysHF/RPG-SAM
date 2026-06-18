@@ -1,0 +1,43 @@
+project: RPG-SAM
+
+paths:
+  dinov2_checkpoint: null
+  sam2_checkpoint: null
+  sam2_config: null
+  output_dir: outputs
+
+model:
+  img_size: 560
+  patch_size: 14
+  dinov2_arch: vit_large
+  compile_dinov2: false
+  sam_image_size: 1024
+
+method:
+  clusters: slic
+  pred: mine_with_weights
+  thre: one_thre_with_sodality_area
+  opsam_interact: mine_use_one_mask
+  kmeans_seed: 40
+  good: 10
+  bad: 0
+  p_runs: 10
+  lamda: 1.0
+  temperture: 20
+  weight_gamma: 1
+  tau: 0.90
+  thre_l: 0.4
+  thre_h: 0.7
+  thre_step: 0.05
+  area_ref_perc: 50
+  area_alpha: 0.3
+  cov_reth: 0.9
+  iou_reth: 0.8
+  max_iter: 5
+
+runtime:
+  batch_size: 1
+  num_workers: 2
+  seed: 40
+  cpu_threads: null
+  cuda_autocast: true

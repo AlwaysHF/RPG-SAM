@@ -1,0 +1,54 @@
+datasets:
+  kvasir:
+    name: Kvasir-SEG
+    root: /path/to/Kvasir-SEG
+    image_dir: images
+    mask_dir: masks
+    image_ext: .jpg
+    mask_ext: .jpg
+    mask_suffix: ""
+
+  cvc_clinicdb:
+    name: CVC-ClinicDB
+    root: /path/to/CVC-ClinicDB
+    image_dir: images
+    mask_dir: masks
+    image_ext: .png
+    mask_ext: .png
+    mask_suffix: ""
+
+  cvc_colondb:
+    name: CVC-ColonDB
+    root: /path/to/CVC-ColonDB
+    image_dir: images
+    mask_dir: masks
+    image_ext: .png
+    mask_ext: .png
+    mask_suffix: ""
+
+  polypgen_c1:
+    name: PolypGen-C1
+    root: /path/to/PolypGen2021_MultiCenterData_v3
+    image_dir: data_C1/images
+    mask_dir: data_C1/masks
+    image_ext: .jpg
+    mask_ext: .jpg
+    mask_suffix: _mask
+
+  polypgen_c2:
+    name: PolypGen-C2
+    root: /path/to/PolypGen2021_MultiCenterData_v3
+    image_dir: data_C2/images
+    mask_dir: data_C2/masks
+    image_ext: .jpg
+    mask_ext: .jpg
+    mask_suffix: _mask
+
+  polypgen_c3:
+    name: PolypGen-C3
+    root: /path/to/PolypGen2021_MultiCenterData_v3
+    image_dir: data_C3/images
+    mask_dir: data_C3/masks
+    image_ext: .jpg
+    mask_ext: .jpg
+    mask_suffix: _mask
