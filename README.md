@@ -19,7 +19,7 @@ Use `torch.cuda.is_available()` as the source of truth for CUDA availability. On
 The CLI defaults to `--device auto`, which uses `cuda:0` when CUDA is visible and falls back to CPU only when no CUDA device is available. To force the same GPU style as the original experiment script, pass `--device cuda:0`.
 
 ```bash
-git clone <your-repo-url> RPG-SAM
+git clone https://github.com/AlwaysHF/RPG-SAM.git
 cd RPG-SAM
 pip install -r requirements.txt
 ```
@@ -28,7 +28,9 @@ pip install -r requirements.txt
 
 DINOv2 and SAM2 are external projects. This repository does not redistribute their full source code or model weights. Install the official repositories following their own instructions, or otherwise make their Python packages importable.
 
-The code was tested with locally vendored SAM2/DINOv2 code under parent project commit `f221f94f4c171d9304997f958f4f8c2a3b4877f2`, and users are encouraged to install the official repositories following their instructions. This commit hash should not be interpreted as an official standalone DINOv2 or SAM2 commit.
+During development, DINOv2 and SAM2 were used as locally installed external dependencies. 
+This repository does not depend on a specific vendored copy of either project. 
+For public use, please install DINOv2 and SAM2 from their official repositories and provide the corresponding checkpoint/config paths.
 
 Download the required DINOv2 and SAM2 checkpoints from their official release channels, then set:
 
@@ -135,11 +137,11 @@ All paths are configured through YAML or CLI arguments. The code does not set `C
 ## Citation
 
 ```bibtex
-@article{rpgsam2026,
-  title   = {RPG-SAM: Training-Free One-Shot Polyp Segmentation},
-  author  = {Weikun Lin,Yunhao Bai,Yan Wang},
-  journal = {MICCAI 2026},
-  year    = {2026}
+@inproceedings{lin2026rpgsam,
+  title     = {RPG-SAM: Reliability-Weighted Prototypes and Geometric Adaptive Threshold Selection for Training-Free One-Shot Polyp Segmentation},
+  author    = {Lin, Weikun and Bai, Yunhao and Wang, Yan},
+  booktitle = {International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  year      = {2026}
 }
 ```
 
