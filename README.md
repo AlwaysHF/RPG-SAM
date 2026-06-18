@@ -42,7 +42,13 @@ in YAML config files or pass them through CLI arguments.
 
 ## Dataset Layout
 
-No medical datasets are redistributed. Place datasets locally and update `configs/datasets.yaml` or pass `--dataset-root`.
+This repository does not redistribute medical datasets. Please download them from their official sources:
+
+- Kvasir-SEG: https://datasets.simula.no/kvasir-seg/
+- CVC-ClinicDB: https://polyp.grand-challenge.org/CVCClinicDB/
+- CVC-ColonDB: http://vi.cvc.uab.es/colon-qa/cvccolondb/
+- PolypGen: https://www.synapse.org/#!Synapse:syn26376615/wiki/613312
+Place datasets locally and update `configs/datasets.yaml` or pass `--dataset-root`.
 
 ```text
 Kvasir-SEG/
